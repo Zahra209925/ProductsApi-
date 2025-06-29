@@ -1,0 +1,12 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "dotnet",
+			"task": "watch ProductsApi",
+			"file": "/Users/s2401563/Desktop/ProductsApi/ProductsApi.csproj",
+			"problemMatcher": [],
+			"label": "dotnet: watch ProductsApi"
+		}
+	]
+}

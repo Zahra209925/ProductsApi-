@@ -1,0 +1,43 @@
+{
+  "version": "0.2.0",
+  "compounds": [
+    {
+      "name": "Run API and Frontend",
+      "configurations": [
+        "Launch API",
+        "Launch Frontend"
+      ]
+    }
+  ],
+  "configurations": [
+    {
+      "name": "Launch API",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/ProductsApi",
+      "cwd": "${workspaceFolder}/ProductsApi",
+      "stopAtEntry": false
+    },
+    {
+      "name": "Launch Frontend",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/frontend",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "5000"
+      ]
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/s2401563/Desktop/ProductsApi",
+      "program": "/Users/s2401563/Desktop/ProductsApi/build/Debug/outDebug"
+    }
+  ]
+}

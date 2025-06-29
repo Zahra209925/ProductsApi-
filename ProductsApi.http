@@ -1,0 +1,21 @@
+@ProductsApi_HostAddress = https://localhost:5103
+@id_token = LIITÄ_TÄHÄN_SAAMASI_ID_TOKEN
+
+### Get all products
+GET {{ProductsApi_HostAddress}}/api/products
+Accept: application/json
+Authorization: Bearer {{id_token}}
+
+### Create a new product
+POST {{ProductsApi_HostAddress}}/api/products
+Authorization: Bearer {{id_token}}
+Content-Type: application/json
+
+{
+    "name": "Sample Product",
+    "price": 29.99
+}
+
+### Get weather forecast (test endpoint)
+GET {{ProductsApi_HostAddress}}/weatherforecast
+Accept: application/json
